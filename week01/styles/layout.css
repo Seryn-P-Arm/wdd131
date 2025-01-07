@@ -48,11 +48,6 @@ p {
 
 .main-content-box {
     background-color: var(--main-bg);
-    grid-template-columns: 1/2;
-}
-
-.aside-content-box {
-    grid-template-columns: 2/3;
 }
 
 footer {
