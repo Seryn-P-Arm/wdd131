@@ -11,6 +11,19 @@
     box-sizing: border-box
 }
 
+/* Declare fots from google's API */
+.jua-regular {
+    font-family: "Jua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.chango-regular {
+    font-family: "Chango", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Header, nav and footer */
 header {
     font-family: "Chango", serif;
