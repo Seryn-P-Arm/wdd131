@@ -1,0 +1,168 @@
+/* Declare root colors */
+:root {
+    --main-color: #052F5F;
+    --secondary-color: #005377;
+}
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Header, nav and footer */
+header {
+    font-family: "Chango", serif;
+}
+
+header, nav, footer {
+    background-color: var(--main-color);
+}
+
+header, footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+header, footer, header nav a {
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Jua", serif;
+}
+
+header nav a {
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+    width: 11rem;
+}
+
+/* Hover effect over nav */
+header a:hover {
+	text-decoration: overline;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+header h1 {
+    padding: 1rem;
+}
+
+/* main section */
+main {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 1fr / 4fr 1fr;
+}
+
+/* cards */
+.card {
+    border: 1px solid #8b8b8b8a;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.card p {
+    padding: 1rem;
+    font-family: "Jua", serif;
+}
+
+.card h2 {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: "Chango", serif;
+}
+
+/* about me section */
+.about-me {
+    display: grid;
+    grid-template: 2fr 1fr;
+}
+
+.about-me h2 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    margin: 0;
+}
+
+.about-me img {
+    grid-column: 2;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 200px;
+    width: auto;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+.about-me p {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    padding: 1rem;
+    text-align: justify;
+    
+}
+
+/* about south africa section */
+.south-africa-about figure {
+    position: relative;
+    float: left;
+    height: 100px;
+    width: auto;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.south-africa-about h3 {
+    text-align: center;
+    justify-self: center;
+    border-bottom: 1px solid #8b8b8b8a;
+    width: 500px;
+    font-size: 27px;
+}
+
+.south-africa-about img {
+    height: 100%;
+    width: auto;
+}
+
+.south-africa-about figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    }
+
+.south-africa-about p {
+    text-align: justify;
+}
+
+/* web resources for Developers */
+.web-resources {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 30%;
+    font-family: "Jua", serif;
+}
+
+/* footer font */
+footer {
+    font-family: "Jua", serif;
+}
