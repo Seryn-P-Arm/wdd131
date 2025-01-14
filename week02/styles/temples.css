@@ -1,0 +1,140 @@
+/* Declare root colors */
+:root {
+    --main-color: #052F5F;
+    --secondary-color: #005377;
+}
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Declare fots from google's API */
+.jua-regular {
+    font-family: "Jua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.chango-regular {
+    font-family: "Chango", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header, nav and footer style */
+header {
+    font-family: "Chango", serif;
+}
+
+header, nav, footer {
+    background-color: var(--main-color);
+}
+
+header, footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+header, footer, header nav a {
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Jua", serif;
+}
+
+header h1 {
+    padding: 2rem;
+}
+
+/* Hanburger menu styling and responsiveness */
+#menu {
+    display: block;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
+
+/* Menu navigation hover effect */
+.navigation a:hover {
+    text-decoration: overline;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.show a {
+    display: block;
+}
+
+/* main element styling */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+h2 {
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    font-family: "Chango", serif;
+}
+
+/* figures */
+figure {
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto; 
+    margin: .5rem;
+    text-align: center;
+}
+
+figcaption {
+    font-size: smaller;
+    font-family: "Jua", serif;
+}
+
+/* footer styling */
+footer {
+    margin-top: 2rem;
+    font-family: "Jua", serif;
+}
