@@ -1,0 +1,63 @@
+/* The media query for PC screens */
+@media screen and (min-width: 1000px) {
+    header h1 {
+        font-size: 4rem;
+    }
+    
+    .hero img {
+        position: relative;
+    }
+
+    .data, .weather {
+        align-items: center;
+        text-align: center;
+    }
+
+    .data {
+        position: absolute;
+        padding: 1rem;
+        top: 12rem;
+        left: 1rem;
+        width: 400px;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .weather {
+        position: absolute;
+        padding: 1rem;
+        top: 40rem;
+        right: 1rem;
+        width: 280px;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Heading styling backgrounds and formatting the pop-out design */
+    .data h2, .weather h2 {
+        background-color: rgba(232, 72, 85, 0.8);
+        align-items: center;
+        text-align: left;
+        padding: 2rem;
+        position: relative;
+        margin-left: -2rem; /* Shift the heading slightly left */
+        margin-right: 3rem;
+        z-index: 1; /* Ensure it stays above the box */
+    }
+
+    /* The weather emoticon replacing the image icon */
+    .weather h2::after {
+        content: "⛅"; /* Unicode for weather icon */
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+        color: var(--main-color);
+    }
+
+    .weather img {
+        display: none; /* Hide the image in large screens */
+    }
+
+    footer {
+        padding: 2rem 0 4rem;
+    }
+}

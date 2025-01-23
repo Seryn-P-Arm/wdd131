@@ -1,0 +1,107 @@
+/* Declare colors */
+:root {
+    --main-color: #0D492C;
+    --secondary-color: #84101A;
+}
+
+/* Fonts */
+.roboto-body {
+  font-family: "Roboto", serif;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+.jersey-15-regular {
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Hero image */
+.hero img {
+    width: 100%;
+    height: auto;
+    padding: 0 0 1rem 0;
+    background-color: var(--secondary-color);
+}
+
+/* Header and footer elements */
+header, footer {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: .5rem;
+}
+
+header h1 {
+    text-align: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    font-size: 3rem;
+    background-color: var(--main-color);
+}
+
+/* Headings styling */
+h1, h2 {
+    font-family: "Jersey 15", serif;
+}
+
+/* Body, main and footer elements */
+body {
+    font-family: "Roboto", serif;
+}
+
+main, footer {
+    text-align: center;
+    align-items: center;
+}
+
+/* Data and Weather description boxes */
+.data, .weather {
+    border: 1px solid #0000003e;
+    padding: 1rem;
+}
+
+.weather img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+
+.weather h2::after {
+    content: ""; /* No pseudo-element in small screens */
+}
+
+.weather h2, .data h2 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.data p, .weather p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: .2rem;
+}
+
+.data label, .weather label {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.data span, .weather span {
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+
+/* The footer */
+footer {
+    padding: 2rem;
+}

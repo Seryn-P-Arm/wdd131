@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Seryn Paige Armstrong">
+        <meta name="description" content="Data about the South AFrican country that I live in and its weather conditions.">
+        <title>South African Country</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>South Africa</h1>
+        </header>
+        <!-- The hero image of South Africa an ddifferent sizes -->
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/south-africa-large.webp" media="min-width: 1000px">
+                    <source srcset="images/south-africa-medium.webp" media="min-width: 500px">
+                    <img src="images/south-africa-small.webp" alt="South African Country" width="500" height="250">
+                </picture>
+            </div>
+            <!-- Data section with all the labels and data in it about South Africa -->
+            <section class="data">
+                <h2>Data</h2>
+                <div>
+                    <p><label for="population">Population:</label> <span id="population">60,000,000</span></p>
+                    <p><label for="capital">Capital:</label> <span id="capital">Pretoria</span></p>
+                    <p><label>Languages:</label> <span>Zulu, Xhosa, Afrikaans, English, and others</span></p>
+                    <p><label>Currency:</label> <span>South African Rand (ZAR)</span></p>
+                    <p><label>Calling Code:</label> <span>+27</span></p>
+                    <p><label>Time Zone:</label> <span>South Africa Standard Time (SAST, UTC+2)</span></p>
+                    <p><label>Internet TLD:</label> <span>.za</span></p>
+                </div>
+            </section>
+            <!-- The Weather section that describes the weather conditions of South Africa -->
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather Icon">
+                <div>
+                    <p><label for="temperature">Temperature:</label> <span id="temperature">24 °C</span></p>
+                    <p><label for="windSpeed">Wind Speed:</label> <span id="windSpeed">15 km/h</span></p>
+                    <p><label for="humidity">Humidity:</label> <span id="humidity">65%</span></p>
+                    <p><label for="windChill">Wind Chill:</label> <span id="windChill">N/A</span></p>
+                    <p><label>Condition:</label> <span>Sunny</span></p>
+                </div>
+            </section>
+        </main>
+        <!-- THe Footer last modified, current year, author name and country -->
+        <footer>
+            <p>
+                <span id="currentyear"></span> &#127804; Seryn Paige Armstrong &#127804; South Africa
+            </p>
+            <p id="lastModified">
+            </p>
+        </footer>
+    </body>
+</html>
