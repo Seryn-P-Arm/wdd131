@@ -18,8 +18,8 @@ function calculateWindChill(temp, speed) {
 
 // Function to update the Wind Chill
 function updateWindChill() {
-    const temp = 24; // in celsius
-    const speed = 15; // in km/h
+    const temp = 8; // in celsius
+    const speed = 12.3; // in km/h
 
     let windChill = "N/A"; //default value if conditions are not met
 
