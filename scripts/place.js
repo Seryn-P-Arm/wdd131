@@ -18,14 +18,17 @@ function calculateWindChill(temp, speed) {
 
 // Function to update the Wind Chill
 function updateWindChill() {
-    const temp = 24;
-    const speed = 15;
+    const temp = 24; // in celsius
+    const speed = 15; // in km/h
 
-    let windChill = "N/A";
+    let windChill = "N/A"; //default value if conditions are not met
+
+    // Check conditions before calling calculateWindChill
     if (temp <= 10 && speed > 4.8) {
         windChill = calculateWindChill(temp, speed);
     }
+    // Display wind chill or N/A
     document.getElementById("windChill").textContent = `${windChill} °C`;
 }
-// Call the update
+// Call the updateWindChill to call the calculateWindChill
 updateWindChill();
