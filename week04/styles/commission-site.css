@@ -1,0 +1,344 @@
+:root {
+    --main-color: #FF9F80;
+    --secondary-color: #D00000;
+    --tertiary-color: #FFE1D6;
+    --yellow-color: #FFFC31;
+}
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eagle-lake-regular {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h1, main h2, main h3 {
+    font-family: "Fascinate Inline", serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 1rem;
+    font-family: "Eagle Lake", serif;
+    font-weight: bold;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+}
+
+header nav a:hover {
+    background-color: var(--tertiary-color);
+}
+
+.header-icon {
+    width: 60px;
+    height: auto;
+}
+
+header, footer {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.header-icon, .footer-icon {
+    position: absolute;
+    width: 60px;
+    height: auto;
+}
+
+.header-icon.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.header-icon.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    margin-top: 2rem;
+}
+
+main, footer {
+    font-family: "Eagle Lake", serif;
+}
+
+.art-preview-container {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2rem;
+    gap: 3rem;
+    scroll-snap-type: x mandatory;
+}
+
+.art-preview {
+    flex-shrink: 0;
+    width: 300px;
+    padding: 2rem;
+    background-color: var(--tertiary-color);
+    scroll-snap-align: center;
+}
+
+.art-preview-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.art-preview-container::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border: 10px;
+    border-radius: 5px;
+}
+
+.art-preview-container::-webkit-scrollbar-track {
+    background-color: var(--tertiary-color);
+}
+
+.welcome-container, .awareness-container, .invite-to-about-us-page-container {
+    background-color: var(--tertiary-color);
+    padding: 4rem 1rem;
+}
+
+main h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.invite-to-about-us-page-container {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 4rem;
+}
+
+.awareness-container {
+    margin: 3rem;
+}
+
+h3 {
+    padding: 1rem 0;
+}
+
+.art-tools-image-banner {
+    position: relative;
+}
+
+.list-points-container {
+    position: absolute;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    align-items: center;
+    width: 40%;
+    padding: 1rem;
+    z-index: 1;
+    left: 30%;
+    bottom: 25%;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+.list-items {
+    padding: 1rem;
+}
+
+.invite-to-about-us-page-container button {
+    margin: 2rem;
+    padding: .5rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Eagle Lake", serif;
+    border-radius: 5px;
+    border: var(--secondary-color);
+}
+
+.invite-to-about-us-page-container button:hover {
+    color: #000;
+    background-color: var(--yellow-color);
+}
+
+.footer-icon.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+.footer-icon.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+footer {
+    padding: 5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    header nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    .header-icon {
+        width: 40px;
+    }
+
+    /* Main content adjustments */
+    .art-preview-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .art-preview {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .welcome-container, 
+    .awareness-container, 
+    .invite-to-about-us-page-container {
+        padding: 2rem 1rem;
+    }
+
+    .art-tools-image-banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .list-points-container {
+        width: 80%;
+        left: 10%;
+        bottom: 15%;
+    }
+
+    /* Invite button */
+    .invite-to-about-us-page-container button {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-icon {
+        width: 40px;
+    }
+
+    .footer-icon.bottom-right,
+    .footer-icon.top-left {
+        display: none; /* Hide decorative icons for smaller screens */
+    }
+}
+
+@media (max-width: 559px) {
+    .list-points-container {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 530px) {
+    /* Further adjustments for smaller mobile devices */
+    .header-top {
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    header nav {
+        gap: 0.5rem;
+    }
+
+    .art-preview {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .list-points-container {
+        font-size: 0.7rem;
+        height: 170px;
+    }
+
+    .invite-to-about-us-page-container button {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 453px) {
+        .list-points-container {
+            position: static;
+            border: none;
+            background-color: transparent;
+            padding-top: .5rem;
+        }
+
+        .list-items {
+            padding: 0;
+        }
+
+        .art-tools-image-banner {
+            position: static;
+        }
+    }
+}
