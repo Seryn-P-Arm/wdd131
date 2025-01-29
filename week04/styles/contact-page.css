@@ -93,6 +93,9 @@ header, footer {
     left: 10px;
 }
 
+header h1 {
+    font-size: 50px;
+}
 
 header nav {
     display: flex;
