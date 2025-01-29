@@ -167,7 +167,7 @@ h3 {
 
 .list-points-container {
     position: absolute;
-    border: 1px solid var(--secondary-color);
+    border: 2.5px dotted var(--secondary-color);
     border-radius: 10px;
     align-items: center;
     width: 40%;
