@@ -143,3 +143,48 @@ gallery-container img:hover {
 footer {
     padding: 5rem;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    header nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    .header-icon {
+        width: 40px;
+    }
+}
+
+@media (max-width: 530px) {
+    /* Further adjustments for smaller mobile devices */
+    .header-top {
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    header nav {
+        gap: 0.5rem;
+    }
+}

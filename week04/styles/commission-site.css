@@ -340,21 +340,21 @@ footer {
     .invite-to-about-us-page-container button {
         font-size: 1rem;
     }
+}
 
-    @media (max-width: 453px) {
-        .list-points-container {
-            position: static;
-            border: none;
-            background-color: transparent;
-            padding-top: .5rem;
-        }
+@media (max-width: 453px) {
+    .list-points-container {
+        position: static;
+        border: none;
+        background-color: transparent;
+        padding-top: .5rem;
+    }
 
-        .list-items {
-            padding: 0;
-        }
+    .list-items {
+        padding: 0;
+    }
 
-        .art-tools-image-banner {
-            position: static;
-        }
+    .art-tools-image-banner {
+        position: static;
     }
 }
