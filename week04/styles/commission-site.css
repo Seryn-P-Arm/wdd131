@@ -29,7 +29,8 @@ header h1, main h2, main h3 {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 45px;
+    padding: 3rem;
 }
 
 header {
