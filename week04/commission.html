@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/commission.css">
+    <script src="scripts/commission.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="images/red-flower-icon.svg" alt="Red Flower" class="header-icon bottom-left" loading="lazy">
+            <img src="images/flowers-and-bee-icon.svg" alt="Flowers and Bee" class="header-icon top-right" loading="lazy">
+        </div>
+        <h1>Commission Order</h1>
+        <nav>
+            <a href="commission-site.html">Home</a>
+            <a href="art-gallery.html">Art</a>
+            <a href="#">Commission</a>
+            <a href="contact-page.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Place a Commission Order</h2>
+        <form id="commission-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="description">Artwork Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="style">Preferred Style:</label>
+            <input type="text" id="style" name="style" required>
+            
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" required>
+            
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline" required>
+            
+            <button id="send-message-button" type="submit">Submit Order</button>
+        </form>
+    </main>
+    <footer>
+        <img src="images/flowers-and-bee-icon.svg" alt="Flowers and Bee" class="footer-icon top-left" loading="lazy">
+        <p>
+            <span id="currentyear"></span> &#127804; Seryn Paige Armstrong &#127804; South Africa
+        </p>
+        <p id="lastModified">
+        </p>
+        <img src="images/red-flower-icon.svg" alt="Red Flower" class="footer-icon bottom-right" loading="lazy">
+    </footer>
+</body>
+</html>

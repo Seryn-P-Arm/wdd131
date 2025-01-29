@@ -1,0 +1,203 @@
+:root {
+    --main-color: #FF9F80;
+    --secondary-color: #D00000;
+    --tertiary-color: #FFE1D6;
+    --yellow-color: #FFFC31;
+}
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eagle-lake-regular {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h1, main h2, main h3 {
+    font-family: "Fascinate Inline", serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 1rem;
+    font-family: "Eagle Lake", serif;
+    font-weight: bold;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+}
+
+header nav a:hover {
+    background-color: var(--tertiary-color);
+}
+
+.header-icon {
+    width: 60px;
+    height: auto;
+}
+
+header, footer {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.header-icon, .footer-icon {
+    position: absolute;
+    width: 60px;
+    height: auto;
+}
+
+.header-icon.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.header-icon.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    margin-top: 2rem;
+}
+
+main, footer {
+    font-family: "Eagle Lake", serif;
+}
+
+.get-in-touch-container {
+    background-color: var(--tertiary-color);
+    padding: 3rem 1rem 1rem;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.contact-paragraph {
+    text-align: center;
+    padding:1rem 3rem;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin: 2rem;
+    padding: .5rem 1.5rem;
+    background-color: #8A0000;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Eagle Lake", serif;
+    border-radius: 5px;
+    border: var(--secondary-color);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.contact-details {
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 18px;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    padding: 3rem 1rem 1rem;
+}
+
+.contact-details a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.contact-details a:hover {
+    color: #ffcc00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer-icon.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+.footer-icon.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+footer {
+    padding: 5rem;
+}

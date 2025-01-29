@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact-page.css">
+    <script src="scripts/contact-page.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="images/red-flower-icon.svg" alt="Red Flower" class="header-icon bottom-left" loading="lazy">
+            <img src="images/flowers-and-bee-icon.svg" alt="Flowers and Bee" class="header-icon top-right" loading="lazy">
+        </div>
+        <h1>Contact</h1>
+        <nav>
+            <a href="commission-site.html">Home</a>
+            <a href="art-gallery.html">Art</a>
+            <a href="commission.html">Commission</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="get-in-touch-container">
+            <h2>Get in Touch</h2>
+            <article class="contact-paragraph">
+                <p>Get in contact with me and ask questions about commissions, deadlines, orders, etc, and even share feedback! I look forward to working with you.</p>
+            </article>
+        </div>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button id="send-message-button" type="submit">Send Message</button>
+        </form>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: <a href="mailto:serynarmstrong.Anime@gmail.com">serynarmstrong.Anime@gmail.com</a></p>
+            <p>Phone: <a href="tel:067-904-5125">067 904 5125</a></p>
+        </div>
+    </main>
+    <footer>
+        <img src="images/flowers-and-bee-icon.svg" alt="Flowers and Bee" class="footer-icon top-left" loading="lazy">
+        <p>
+            <span id="currentyear"></span> &#127804; Seryn Paige Armstrong &#127804; South Africa
+        </p>
+        <p id="lastModified">
+        </p>
+        <img src="images/red-flower-icon.svg" alt="Red Flower" class="footer-icon bottom-right" loading="lazy">
+    </footer>
+</body>
+</html>
