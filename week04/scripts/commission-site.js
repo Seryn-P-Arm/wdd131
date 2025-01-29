@@ -21,6 +21,13 @@ document.querySelectorAll(".header-icon, .footer-icon").forEach(icon => {
     });
 });
 
+function navigateToAboutUs() {
+    window.location.href = "contact-page.html";
+}
+
+// Attach the function to the button
+document.getElementById("about-us-button").addEventListener("click", navigateToAboutUs);
+
 // Add animation to the "Find Out More" button
 const aboutUsButton = document.getElementById("about-us-button");
 if (aboutUsButton) {
