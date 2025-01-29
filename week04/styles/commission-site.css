@@ -185,7 +185,7 @@ h3 {
 .invite-to-about-us-page-container button {
     margin: 2rem;
     padding: .5rem 1.5rem;
-    background-color: var(--secondary-color);
+    background-color: #8A0000;
     color: #fff;
     font-weight: bold;
     font-family: "Eagle Lake", serif;
@@ -196,6 +196,22 @@ h3 {
 .invite-to-about-us-page-container button:hover {
     color: #000;
     background-color: var(--yellow-color);
+}
+
+.invite-paragraph a {
+    text-decoration: none;
+}
+
+.invite-paragraph a:hover {
+    color: var(--secondary-color);
+}
+
+.invite-paragraph a:visited {
+    color: var(--secondary-color);
+}
+
+.invite-paragraph a:active {
+    color: navy;
 }
 
 .footer-icon.bottom-right {
