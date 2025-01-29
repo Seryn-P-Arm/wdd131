@@ -163,11 +163,10 @@ button:hover {
 
 .contact-details {
     margin: 2rem;
-    padding: 1rem;
     font-size: 18px;
     text-align: center;
     background-color: var(--tertiary-color);
-    padding: 3rem 1rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .contact-details a {
