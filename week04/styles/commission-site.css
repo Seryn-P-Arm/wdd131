@@ -245,7 +245,7 @@ footer {
     header nav {
         flex-direction: column;
         gap: 1rem;
-        width: 100%;
+        width: 80%;
     }
 
     header nav a {

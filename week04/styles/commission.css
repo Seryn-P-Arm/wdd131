@@ -104,6 +104,10 @@ main, footer {
     font-family: "Eagle Lake", serif;
 }
 
+main {
+    padding-top: 2rem;
+}
+
 main h2 {
     text-align: center;
     padding: 2rem;
@@ -177,7 +181,7 @@ footer {
     header nav {
         flex-direction: column;
         gap: 1rem;
-        width: 100%;
+        width: 80%;
     }
 
     header nav a {
