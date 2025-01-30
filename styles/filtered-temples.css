@@ -1,0 +1,177 @@
+/* Declare root colors */
+:root {
+    --main-color: #052F5F;
+    --secondary-color: #005377;
+}
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Declare fots from google's API */
+.jua-regular {
+    font-family: "Jua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.chango-regular {
+    font-family: "Chango", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header, nav and footer style */
+header {
+    font-family: "Chango", serif;
+}
+
+header, nav, footer {
+    background-color: var(--main-color);
+}
+
+header, footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+header, footer, header nav a {
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Jua", serif;
+}
+
+header h1 {
+    padding: 2rem;
+}
+
+/* Hanburger menu styling and responsiveness */
+#menu {
+    display: block;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
+
+/* Menu navigation hover effect */
+.navigation a:hover {
+    text-decoration: overline;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.show a {
+    display: block;
+}
+
+/* main element styling */
+/* Grid layout for temple cards */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    padding: 2rem;
+}
+
+h2 {
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    font-family: "Chango", serif;
+}
+
+/* Styling for each temple card */
+figure {
+    background-color: #f8f9fa; /* Light grey background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Temple image styling */
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--main-color);
+}
+
+/* Temple details */
+figcaption {
+    padding: 1rem;
+    text-align: center;
+    font-family: "Jua", sans-serif;
+}
+
+figcaption h3 {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+figcaption p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* footer styling */
+footer {
+    margin-top: 2rem;
+    font-family: "Jua", serif;
+}
