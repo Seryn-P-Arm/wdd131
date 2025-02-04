@@ -1,0 +1,55 @@
+:root {
+    --main-color: #FF9F80;
+    --secondary-color: #D00000;
+    --tertiary-color: #FFE1D6;
+    --yellow-color: #FFFC31;
+}
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eagle-lake-regular {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h1, main h2, main h3 {
+    font-family: "Fascinate Inline", serif;
+}
+
+header h1 {
+    font-size: 45px;
+    padding: 3rem;
+}
+
+header, footer {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+main, footer {
+    font-family: "Eagle Lake", serif;
+}
+
+main h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 35px;
+}
+
+footer {
+    padding: 5rem;
+}
