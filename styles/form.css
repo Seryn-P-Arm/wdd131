@@ -1,0 +1,111 @@
+/* Declare root colors */
+:root {
+    --main-color: #052F5F;
+    --secondary-color: #005377;
+}
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Declare fots from google's API */
+.jua-regular {
+    font-family: "Jua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.chango-regular {
+    font-family: "Chango", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header, nav and footer style */
+header, footer {
+    font-family: "Chango", serif;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 2rem;
+}
+
+/* Style main */
+main {
+    font-family: "Chango", serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+legend {
+    font-weight: bold;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: .2rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Jua", serif;
+}
+
+.checkbox-label {
+    font-family: "Jua", serif;
+}
+
+/* Buttons */
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Chango", serif;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Media screen size smaller inquiry */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+    }
+}
