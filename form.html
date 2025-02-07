@@ -21,14 +21,14 @@
             <form action="review.html" method="get">
 
                 <!-- Product select -->
-                <label for="product">Product Name:</label>
+                <label for="product">Product Name <span class="required">*</span></label>
                 <select id="product" name="product" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
 
                 <!-- Rating -->
                 <fieldset>
-                    <legend>Overall Rating:</legend>
+                    <legend>Overall Rating <span class="required">*</span></legend>
                     <label><input type="radio" name="rating" value="1" required> ☆</label>
                     <label><input type="radio" name="rating" value="2"> ☆☆</label>
                     <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
@@ -37,20 +37,25 @@
                 </fieldset>
 
                 <!-- Date of installation -->
-                <label for="install-date">Date of Installation:</label>
+                <label for="install-date">Date of Installation <span class="required">*</span></label>
                 <input type="date" id="install-date" name="install-date" required>
 
                 <!-- Checkboxes for useful features of the product being reviewed -->
                 <fieldset>
-                    <legend>Useful Features:</legend>
+                    <legend>Useful Features</legend>
                     <label class="checkbox-label"><input type="checkbox" name="features" value="Durability"> Durability</label>
-                    <label class="checkbox-label"><input type="checkbox" name="features" value="Performance"> Performance</label>
                     <label class="checkbox-label"><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                    <label class="checkbox-label"><input type="checkbox" name="features" value="Performance"> Performance</label>
+                    <label class="checkbox-label"><input type="checkbox" name="features" value="Design"> Design</label>
                 </fieldset>
 
                 <!-- Write review -->
-                <label for="review">Written Review:</label>
+                <label for="review">Written Review</label>
                 <textarea id="review" name="review" rows="4"></textarea>
+
+                <!-- User's name input text box -->
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" name="user-name">
 
                 <!-- Submit button -->
                 <input type="submit" value="Send Review">
