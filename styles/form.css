@@ -30,6 +30,7 @@ header, footer {
     background-color: var(--main-color);
     color: #fff;
     padding: 2rem;
+    text-align: center;
 }
 
 /* Style main */
@@ -38,10 +39,6 @@ main {
     margin: 20px;
     padding: 10px;
     background-color: #f9f9f9;
-}
-
-h1 {
-    text-align: center;
 }
 
 /* Form styling */
