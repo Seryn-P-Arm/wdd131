@@ -45,3 +45,20 @@ document.querySelectorAll("header nav a").forEach(link => {
         link.style.transform = "scale(1)";
     });
 });
+
+// Handle sending the message from the contact form
+document.querySelector("#contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // Save the message to localStorage
+    const contactMessage = {
+        name: document.querySelector("#contactName").value,
+        email: document.querySelector("#contactEmail").value,
+        message: document.querySelector("#contactMessage").value
+    };
+
+    localStorage.setItem("contactMessage", JSON.stringify(contactMessage)); // Save message in localStorage
+
+    // Redirect to contact success page
+    window.location.href = "contact-success.html"; // Redirect to contact success page
+});

@@ -180,6 +180,10 @@ footer {
     .header-icon {
         width: 40px;
     }
+
+    .footer-icon {
+        width: 40px;
+    }
 }
 
 @media (max-width: 530px) {

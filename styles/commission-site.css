@@ -297,17 +297,8 @@ footer {
     }
 
     /* Footer adjustments */
-    footer {
-        padding: 2rem;
-    }
-
     .footer-icon {
         width: 40px;
-    }
-
-    .footer-icon.bottom-right,
-    .footer-icon.top-left {
-        display: none; /* Hide decorative icons for smaller screens */
     }
 }
 
