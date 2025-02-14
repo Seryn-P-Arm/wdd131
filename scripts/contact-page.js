@@ -46,19 +46,24 @@ document.querySelectorAll("header nav a").forEach(link => {
     });
 });
 
-// Handle sending the message from the contact form
-document.querySelector("#contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission behavior
+// Ensure the DOM is fully loaded before executing the script
+document.addEventListener("DOMContentLoaded", function() {
+    // Handle sending the message from the contact form
+    const contactForm = document.querySelector("#contact-form");
 
-    // Save the message to localStorage
-    const contactMessage = {
-        name: document.querySelector("#contactName").value,
-        email: document.querySelector("#contactEmail").value,
-        message: document.querySelector("#contactMessage").value
-    };
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
 
-    localStorage.setItem("contactMessage", JSON.stringify(contactMessage)); // Save message in localStorage
+        // Save the message to localStorage
+        const contactMessage = {
+            name: document.querySelector("#name").value,
+            email: document.querySelector("#email").value,
+            message: document.querySelector("#message").value
+        };
 
-    // Redirect to contact success page
-    window.location.href = "contact-success.html"; // Redirect to contact success page
+        localStorage.setItem("message", JSON.stringify(contactMessage)); // Save message in localStorage
+
+        // Redirect to contact success page
+        window.location.href = "contact-success.html"; // Redirect to contact success page
+    });
 });

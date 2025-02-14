@@ -208,11 +208,11 @@ h3 {
 }
 
 .invite-paragraph a:hover {
-    color: var(--secondary-color);
+    color: #700000;
 }
 
 .invite-paragraph a:visited {
-    color: var(--secondary-color);
+    color: #700000;
 }
 
 .invite-paragraph a:active {

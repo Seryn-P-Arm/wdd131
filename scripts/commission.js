@@ -46,10 +46,29 @@ window.onload = function() {
     }
 };
 
-// Add event listener to the form submission button
-document.querySelector("#submitButton").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent form submission
-    saveCommissionOrder(); // Save commission order to array and localStorage
+// Ensure the DOM is fully loaded before executing the script
+document.addEventListener("DOMContentLoaded", function() {
+    // Handle sending the commission order form
+    const commissionForm = document.querySelector("#commission-form");
+
+    commissionForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        // Save the commission order to localStorage
+        const commissionOrder = {
+            name: document.querySelector("#name").value,
+            email: document.querySelector("#email").value,
+            artworkDescription: document.querySelector("#description").value,
+            preferredStyle: document.querySelector("#style").value,
+            budget: document.querySelector("#budget").value,
+            deadline: document.querySelector("#deadline").value
+        };
+
+        localStorage.setItem("commissionOrder", JSON.stringify(commissionOrder)); // Save commission order in localStorage
+
+        // Redirect to commission success page
+        window.location.href = "success.html"; // Redirect to commission success page
+    });
 });
 
 // On the success page, retrieve the stored order and display a thank-you message
