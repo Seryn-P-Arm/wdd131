@@ -45,3 +45,59 @@ document.querySelectorAll("header nav a").forEach(link => {
         link.style.transform = "scale(1)";
     });
 });
+
+// Create a commission order object
+let commissionOrder = {
+    name: "",
+    email: "",
+    description: "",
+    preferredStyle: "",
+    budget: "",
+    deadline: ""
+};
+
+// Function to update the object with form data
+function updateCommissionOrder() {
+    commissionOrder.name = document.querySelector("#name").value;
+    commissionOrder.email = document.querySelector("#email").value;
+    commissionOrder.description = document.querySelector("#description").value;
+    commissionOrder.preferredStyle = document.querySelector("#style").value;
+    commissionOrder.budget = document.querySelector("#budget").value;
+    commissionOrder.deadline = document.querySelector("#deadline").value;
+}
+
+// Create an array to hold multiple commission orders
+let commissionOrders = [];
+
+// Function to save the commission order to the array
+function saveCommissionOrder() {
+    updateCommissionOrder();
+    commissionOrders.push({ ...commissionOrder }); // Add a copy of the order object to the array
+    console.log(commissionOrders); // Log the array to check
+
+    // Save the commission order to localStorage
+    localStorage.setItem("commissionOrder", JSON.stringify(commissionOrder));
+
+    // Create the confirmation message after saving
+    const userMessage = `Hello, ${commissionOrder.name}. Your commission request is received!`;
+    document.querySelector("#confirmationMessage").textContent = userMessage;
+}
+
+// Retrieve and populate the form with stored data from localStorage
+window.onload = function() {
+    const savedOrder = JSON.parse(localStorage.getItem("commissionOrder"));
+    if (savedOrder) {
+        document.querySelector("#name").value = savedOrder.name;
+        document.querySelector("#email").value = savedOrder.email;
+        document.querySelector("#description").value = savedOrder.description;
+        document.querySelector("#style").value = savedOrder.preferredStyle;
+        document.querySelector("#budget").value = savedOrder.budget;
+        document.querySelector("#deadline").value = savedOrder.deadline;
+    }
+};
+
+// Add event listener to the form submission button (if applicable)
+document.querySelector("#submitButton").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+    saveCommissionOrder(); // Save commission order and display the confirmation message
+});
