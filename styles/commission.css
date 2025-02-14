@@ -138,6 +138,20 @@ input, textarea {
     border-radius: 5px;
 }
 
+/* Required fields styling when invalid and valid */
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+input:required:invalid {
+    border-left: 4px solid red;
+}
+
+input:required:valid {
+    border-left: 4px solid green;
+}
+
 button {
     margin: 2rem;
     padding: .5rem 1.5rem;
